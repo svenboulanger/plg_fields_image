@@ -18,4 +18,22 @@
 
 		<targetplatform name="joomla" version="3.7" />
 	</update>
+	<update>
+		<name>plg_fields_image</name>
+		<description>PLG_FIELDS_IMAGE_XML_DESCRIPTION</description>
+		<element>image</element>
+		<folder>fields</folder>
+		<type>plugin</type>
+		<version>3.7.0</version>
+		
+		<infourl title="PlgFieldsImage URL">https://github.com/svenboulanger/plg_fields_image</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/svenboulanger/plg_fields_image/archive/master.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>beta</tag>
+		</tags>
+
+		<targetplatform name="joomla" version="3.7" />
+	</update>
 </updates>
