@@ -7,6 +7,7 @@
 		<folder>fields</folder>
 		<type>plugin</type>
 		<version>3.7.0</version>
+		<client>0</client>
 		
 		<infourl title="PlgFieldsImage URL">https://github.com/svenboulanger/plg_fields_image</infourl>
 		<downloads>
@@ -25,6 +26,7 @@
 		<folder>fields</folder>
 		<type>plugin</type>
 		<version>3.7.1</version>
+		<client>0</client>
 		
 		<infourl title="PlgFieldsImage URL">https://github.com/svenboulanger/plg_fields_image</infourl>
 		<downloads>
