@@ -19,4 +19,10 @@
 		<language tag="en-GB">language/en-GB/en-GB.plg_fields_image.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_fields_image.sys.ini</language>
 	</languages>
+	
+	<!-- Updateserver definition -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="PlgFieldsImage Update Site">
+	</updateservers>
 </extension>
