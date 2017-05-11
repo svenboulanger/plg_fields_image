@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams">
+			<field
+				name="path"
+				type="text"
+				default="images/"
+				label="PLG_FIELDS_IMAGE_PATH_LABEL"
+				description="PLG_FIELDS_IMAGE_PATH_DESC" />
+				
+			<field
+				name="width"
+				type="number"
+				default="256"
+				label="PLG_FIELDS_IMAGE_PARAMS_WIDTH_LABEL"
+				description="PLG_FIELDS_IMAGE_PARAMS_WIDTH_DESC" />
+				
+			<field
+				name="height"
+				type="number"
+				default="256"
+				label="PLG_FIELDS_IMAGE_PARAMS_HEIGHT_LABEL"
+				description="PLG_FIELDS_IMAGE_PARAMS_HEIGHT_DESC" />
+				
+			<field
+				name="remove_old"
+				type="list"
+				default="1"
+				label="PLG_FIELDS_IMAGE_PARAMS_REMOVE_LABEL"
+				description="PLG_FIELDS_IMAGE_PARAMS_REMOVE_DESC">
+				<option value="1">PLG_FIELDS_IMAGE_REMOVE_OLD</option>
+				<option value="0">PLG_FIELDS_IMAGE_REMOVE_NO</option>
+			</field>
+			
+			<field
+				name="scale_down"
+				type="list"
+				default="0"
+				label="PLG_FIELDS_IMAGE_PARAMS_SCALEDOWN_LABEL"
+				description="PLG_FIELDS_IMAGE_PARAMS_SCALEDOWN_DESC">
+				<option value="0">PLG_FIELDS_IMAGE_SCALE_DOWN</option>
+				<option value="1">PLG_FIELDS_IMAGE_SCALE_BOTH</option>
+			</field>
+
+			<field
+				name="css"
+				type="text"
+				default="img-responsive img-thumbnail"
+				label="PLG_FIELDS_IMAGE_PARAMS_CSS_LABEL"
+				description="PLG_FIELDS_IMAGE_PARAMS_CSS_DESC" />
+		</fieldset>
+	</fields>
+</form>
