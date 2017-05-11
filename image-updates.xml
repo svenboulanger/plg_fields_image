@@ -6,7 +6,7 @@
 		<element>image</element>
 		<folder>fields</folder>
 		<type>plugin</type>
-		<version>3.7.0</version>
+		<version>3.7.0.1</version>
 		
 		<infourl title="PlgFieldsImage URL">https://github.com/svenboulanger/plg_fields_image</infourl>
 		<downloads>
