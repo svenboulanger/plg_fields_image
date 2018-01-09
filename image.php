@@ -60,13 +60,13 @@ class PlgFieldsImage extends FieldsPlugin
 			if ($field->type == $this->_name)
 			{
 				// Extract the previous URL's to restore them later if no file has been uploaded
-				$uploaded[$field->id] = $this->value;
 				if (!empty($up[$field->name]))
 				{
 					if ($this->hasFile($up[$field->name]))
 					{
 						// Try to upload the file
-						$response = $this->uploadImage($up[$field->name], $field->fieldparams, $field->id . '_' . $item->id . '_');
+						$response = $this->uploadImage($up[$field->name], $field->fieldparams, $field->id . '_');
+						
 						if ($response['success'] == false)
 						{
 							$app->enqueueMessage($response['error'], 'error');
@@ -76,7 +76,6 @@ class PlgFieldsImage extends FieldsPlugin
 						{
 							$this->uploaded[] = (object) array(
 								'field' => $field->id,
-								'item' => $item->id,
 								'image' => $response['image'],
 								'old' => $field->rawvalue
 							);
@@ -87,7 +86,6 @@ class PlgFieldsImage extends FieldsPlugin
 						// No file given, so just use the old value
 						$this->uploaded[] = (object) array(
 							'field' => $field->id,
-							'item' => $item->id,
 							'image' => $field->rawvalue,
 							'old' => $field->rawvalue
 						);
@@ -126,7 +124,7 @@ class PlgFieldsImage extends FieldsPlugin
 		// Setting the value for the field and the item
 		foreach ($this->uploaded as $upload)
 		{
-			$model->setFieldValue($upload->field, $upload->item, $upload->image);
+			$model->setFieldValue($upload->field, $item->id, $upload->image);
 			
 			// Remove the old image if it exists
 			if ($upload->image != $upload->old)

@@ -6,7 +6,7 @@
 	<copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>sven@bamadi.be</authorEmail>
-	<version>3.7.0.1</version>
+	<version>3.7.0.2</version>
 	<description>PLG_FIELDS_IMAGE_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="image">image.php</filename>
@@ -18,6 +18,8 @@
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.plg_fields_image.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_fields_image.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_fields_image.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_fields_image.sys.ini</language>
 	</languages>
 	
 	<!-- Updateserver definition -->
